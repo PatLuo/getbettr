@@ -7,11 +7,17 @@ import {
   DialogTrigger,
 } from "@/components/ui/dialog";
 
+import { Separator } from "@/components/ui/separator";
+
 export default function ChallengeCard() {
   return (
     <Dialog>
       <DialogTrigger className="border p-6 rounded">Open</DialogTrigger>
-      <DialogContent>This is inside the popupt</DialogContent>
+      <DialogContent>
+        <div className="w-20 min-h-96"></div>
+        <Separator />
+        This is inside the popupt
+      </DialogContent>
     </Dialog>
   );
 }
