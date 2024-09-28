@@ -1,3 +1,4 @@
+"use client";
 import {
   Card,
   CardContent,
@@ -7,14 +8,11 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
-import ChallengeCard from "@/components/ui/ChallengeCard";
-
+import ChallengeCardList from "@/components/ui/ChallengeCardList";
 export default function Home() {
   return (
     <main className="p-4 d-4 h-screen flex flex-col items-center justify-center">
-      <ChallengeCard />
-      <ChallengeCard />
-      <ChallengeCard />
+      <ChallengeCardList />
     </main>
   );
 }
